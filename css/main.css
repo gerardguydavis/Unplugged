@@ -257,18 +257,14 @@ footer .content-wrapper {
 .footer-content {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items:flex-start;
   text-align:center;
-  flex-direction: column;
 }
 
-.footer p {
+footer p {
   margin: 0;
 }
 
-footer .social {
-  padding: 45px 0;
-}
 
 footer .social p{
   display: flex;
@@ -504,6 +500,10 @@ footer .social-icons {
       flex-basis: 160px;
     }
 
+    /***** HERO *****/
+    .hero-area h1 {
+      margin: 0;
+    }
   }
 
 /* ==========================================================================
