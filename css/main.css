@@ -145,6 +145,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 /*** Header ***/
@@ -175,10 +176,20 @@ header nav ul {
   justify-content: center;
   align-items: center;
   width:45%;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
 }
+
+header nav ul li {
+  padding: 0 30px;
+}
+
 .header-divider{
   width:100%;
+  border-top: solid 1px #3a3a3a;
 }
+
 /*-------------------- MOBILE STYLES ------------------------*/
 
 .hero-area {
@@ -191,8 +202,10 @@ header nav ul {
 
 }
 
-.hero-area h1 {
+.hero-area h2 {
   padding: 55px 0;
+  font-weight: 500;
+  font-size: 2.875em;
 }
 
 .hero-area .form-description {
@@ -204,6 +217,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
   margin: 30px 0 55px 0;
 }
 
@@ -211,6 +225,37 @@ aside .content-wrapper {
   display:flex;
   justify-content:space-between;
   flex-flow:row wrap;
+  padding: 0 0 55px 0;
+}
+
+aside h3 {
+  font-weight: 500;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .content-wrapper {
@@ -225,7 +270,12 @@ main .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  margin: 50px 0;
+}
+
+.features h2 {
+  font-weight: 500;
+  font-size: 1.6875rem;
 }
 
 .features article {
@@ -259,7 +309,13 @@ main .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   padding: 55px 0 45px 0;
+  background-color: #2a423a;
+  color: #e2e3ed;
+}
 
+.reviews h2,
+.reviews h3 {
+  font-weight: 400;
 }
 
 /*------------------ ABOUT SECTION ------------------*/
@@ -268,40 +324,79 @@ main .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+  color: #e2e3ed;
+}
+
+.mission .content-wrapper {
+  padding: 50px 0;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #2a423a;
+  color: #e2e3ed;
 }
 
+.contact-section .content-wrapper {
+  padding: 50px 0;
+}
+
+.mission h1,
+.contact-section h1 {
+  font-weight: 500;
+}
+
+.contact-section h4 {
+  font-weight: 400;
+}
 /*------------------ FAQ SECTION ------------------*/
 
 .faq {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
   display: flex;
   flex-flow: row wrap;
+  color: #e2e3ed;
+  padding: 50px 0;
 }
 
 .faq-content article {
   padding: 25px 0;
 }
 
+.faq h2 {
+  font-size: 1.5625em;
+  font-weight: 500;
+}
+
+.faq h4 {
+  font-size:.8125em;
+  font-weight: 500;
+}
+
+.faq p {
+  font-size: .8125em;
+}
+
 /*------------- FOOTER ------------*/
 
 footer {
-
+  display: flex;
 }
 
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+  flex-flow: row wrap;
+  color: #fff;
 }
 
 .footer-content {
@@ -309,12 +404,16 @@ footer .content-wrapper {
   justify-content: center;
   align-items:flex-start;
   text-align:center;
+  flex-flow: row wrap;
 }
 
 footer p {
   margin: 0;
 }
 
+footer h4 {
+  font-weight: 500;
+}
 
 footer .social p{
   display: flex;
@@ -333,6 +432,7 @@ footer .social-icons {
 .copyright {
   padding:50px 0 0 0;
   text-align:center;
+  font-size: .625em;
 }
 
 
@@ -451,6 +551,11 @@ footer .social-icons {
   
   header nav ul {
     justify-content:space-between;
+    margin-right: 120px;
+  }
+
+  header nav ul li {
+    padding: 0 20px;
   }
 
   /*** ASIDE ***/
@@ -489,8 +594,10 @@ footer .social-icons {
 
 
   /**** FAQ ****/
+
   .faq .content-wrapper {
     justify-content: space-between;
+    padding: 100px 0;
   }
 
   .faq-content {
@@ -503,6 +610,10 @@ footer .social-icons {
 
   /**** ABOUT ****/
 
+  .mission .content-wrapper {
+    padding: 100px 0;
+  }
+
   .mission-content {
     display: flex;
     justify-content: space-between;
@@ -514,10 +625,15 @@ footer .social-icons {
     width: 300px;
   }
 
+  .contact-section .content-wrapper {
+    padding: 100px 0;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 100%;
   }
 
+  
   .contact-content {
     display: flex;
     justify-content: space-between;
