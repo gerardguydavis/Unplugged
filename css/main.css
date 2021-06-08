@@ -87,6 +87,28 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav,
+header content-wrapper,
+aside,
+.features .features-items,
+.reviews,
+.mission,
+.contact-section,
+.faq,
+.faq .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +282,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
