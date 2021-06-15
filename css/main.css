@@ -86,6 +86,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.content-wrapper {
+width: 90%;
+margin: 50px 0;
+   }
 
 header,
 footer {
@@ -95,9 +99,6 @@ footer {
   flex-flow: row wrap;
 }
 
-.content-wrapper {
-  width: 90%;
-}
 
 header {
   padding: 15px 0;
@@ -155,6 +156,7 @@ div input {
 .features-items {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .features h2 {
@@ -163,7 +165,7 @@ div input {
 
 .features article {
   width: 55%;
-  padding: 25px 80px;
+  margin: 30px 0;
   text-align: center;
 }
 
@@ -190,13 +192,24 @@ div input {
 .faq {
   display: flex;
   justify-content: center;
-  width: 90%;
+  align-items: center;
   flex-flow: row wrap;
-  padding: 50px 0;
+}
+
+.faq .content-wrapper {
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
 }
 
 .faq-content {
-  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 /********ABOUT********/
@@ -205,7 +218,7 @@ div input {
 .contact-section {
   display: flex;
   justify-content: center;
-  width: 90%;
+  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -312,8 +325,8 @@ footer .copyright {
 @media only screen and (min-width: 768px) {
   /*****TABLET*****/
   .content-wrapper {
-      max-width: 640px;
-      margin: 100px 0;
+    max-width: 640px;
+    margin: 100px 0;
   }
 
   header {
@@ -355,14 +368,15 @@ footer .copyright {
 
   .features article {
     display: flex;
-    align-items: baseline;
-    flex-flow: row wrap;
-    flex-basis: 30%;
-    padding: 25px 60px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+    padding: 0;
   }
 
   .features .features-item-description {
-      width: 100%;
+      width: 60%;
   }
 
   .reviews article {
@@ -375,12 +389,6 @@ footer .copyright {
   }
 
   /******ABOUT******/
-
-  .mission,
-  .contact-section {
-    width: 640px;
-    padding: 0 65px;
-  }
 
   .mission-content {
      display: flex;
@@ -399,15 +407,10 @@ footer .copyright {
  .contact-content {
      display: flex;
      justify-content: space-between;
-     align-items: baseline;
+     align-items: flex-start;
 }
 
   /******FAQ******/
-
-  .faq {
-    width: 640px;
-    padding: 0 65px;
-  }
 
   .faq .content-wrapper {
     display: flex;
@@ -416,7 +419,7 @@ footer .copyright {
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
@@ -438,16 +441,19 @@ footer .copyright {
       margin-bottom: 0;
   }
 
-  footer .copyright {
-      width:
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    max-width: 960px;
   }
-}
-
-}
-
-
-@media only screen and (min-width:; 1200px) {
-/*****DESKTOP*****/
+  .features h2 {
+    width: 90%;
+  }
+  .features article {
+    flex-basis: 33%;
+  }
 
 }
 
